@@ -1,0 +1,124 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar
+{
+    background-color: salmon;
+}
+.navbar ul li
+{
+    list-style: none;
+    display:inline-block;
+    position:relative;
+    margin: 0 20px;
+}                                                         
+.navbar ul li a
+{
+    text-decoration: none;
+    color: purple;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar ul li::after
+{
+    content:'';
+    height:3px;
+    width:0px;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s
+}
+.navbar ul li:hover::after
+{
+    width:100%;
+}
+.navbar-toggler
+{
+    background-color: blueviolet;
+    width:10px;
+}
+.content
+{
+    margin-top: 500px;
+}
+button
+{
+    width:200px;
+    padding:15px 0;
+    text-align:center;
+    margin:20px 10px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid #009688;
+    background:transparent;
+    color:black;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+span1
+{
+    background:#009688;
+    height:100%;
+    width:0;
+    border-radius:25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+}
+button:hover span1
+{
+    width:100%
+}
+button:hover
+{
+    border:none;
+}
+.bgimage
+{
+    background-image: url(edX_Homepage-Feature_mRNA-Vaccines_580x470-0a14c05b0d86774be287e2904eb9acec.png);
+    background-repeat: no-repeat;
+    border-radius:50%;
+    height:200px;
+    width:200px;
+    background-size:cover;
+    background-position:center center center;
+}
+.bgimage2
+{
+    background-image: url(diego-ph-fIq0tET6llw-unsplash.jpg);
+    float: right;
+    background-repeat: no-repeat;
+    border-radius:50%;
+    height:200px;
+    width:200px;
+    background-size:cover;
+    background-position:center center center;
+}
+.bgimage3
+{
+    background-image: url(matthew-fournier-5NM32v14n6M-unsplash.jpg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    background-size: cover;
+    background-position:center center center;
+}
+.bgimage4
+{
+    background-image: url(nikola-jovanovic-OBok3F8buKY-unsplash.jpg);
+    background-repeat: no-repeat;
+    border-radius:50%;
+    height:200px;
+    width:200px;
+    background-size:cover;
+    background-position:center center center;
+}
